@@ -1,7 +1,7 @@
-//
-//
-//
-//
+//Michael Curry Nov.9, 2013
+//Scalable Data Instr.
+//Lab 6
+//Arrays
 
 //Family House Members
 
@@ -24,7 +24,7 @@ var occuptions = function(arrayNames, arrayJobs) {
         
         Kjob = arrayJobs.pop();
         
-        console.log("Just making sure Im " + Kjob + ".")
+        //console.log("Just making sure Im " + Kjob + ".")
         
         return Kjob;
 }
