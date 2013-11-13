@@ -1,0 +1,15 @@
+var jsonDataNFL = {
+    
+    "NFL" :
+    
+    [
+      
+      {"team": "Dolphins", "team location": "Miami", "conference": "AFC",},
+      
+      {"team": "Packers", "team location": "Green Bay", "conference": "NFC",},
+      
+      {"team": "Colts", "team location": "Indianapolis", "conference": "AFC",}
+    
+    ]
+
+};

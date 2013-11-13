@@ -19,8 +19,11 @@ var occuptions = function(arrayNames, arrayJobs) {
         };
         
         
+        arrayNames.push("Keion");
         arrayJobs.push("a Doctor");
         console.log("Kayla's son " + arrayNames[arrayNames.length - 1] + " wants to be " + arrayJobs[arrayJobs.length - 1] + "." );
+        
+        
         
         Kjob = arrayJobs.pop();
         
