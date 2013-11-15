@@ -8,7 +8,7 @@ var jsonDataNFL = {
       
       {"team": "Packers", "team location": "Green Bay", "conference": "NFC",},
       
-      {"team": "Colts", "team location": "Indianapolis", "conference": "AFC",}
+      {"team": "Colts", "team location": "Indianapolis", "conference": "AFC"}
     
     ]
 

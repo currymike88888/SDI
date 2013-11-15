@@ -19,26 +19,15 @@
 //console.log("Hello")
 //
 //
+var objNewTeam;
+var objNewTeamTwo;
+
 var team;
 var teamstate;
 var conference;
 
 
-var myJSONFunction = function()
-{
-    
-    for (var i = 0; i < jsonDataNFL.NFL.length; i++)
-    {
-        
-        for (var key in jsonDataNFL.NFL[i])
-        {
-            
-            console.log("The",  key, "is", jsonDataNFL.NFL[i][key], "." );
-            
-            
-        }
-    }
-};
+
 
 var objConstructor = function(NFLteam,NFLState,NFLconference) {
     
@@ -68,8 +57,30 @@ var createNFL = function(){
     };
 };
 
+var myJSONFunction = function()
+{
+    
+    for (var i = 0; i < jsonDataNFL.NFL.length; i++)
+    {
+        
+        for (var key in jsonDataNFL.NFL[i])
+        {
+            
+            console.log("The",  key, "is", jsonDataNFL.NFL[i][key], "." );
+            
+            
+        }
+    }
+};
+
+
+
+
 
 myJSONFunction();
+
+//called the loop function myJSON
+
 
 createNFL();
 
