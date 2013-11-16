@@ -1,6 +1,6 @@
 // Problem 1
 
-var myEmail = "curr ymike89@gmail.com"
+var myEmail = "currymike89@gmail.com"
 
 var vaildMail = function(findChar)
 
