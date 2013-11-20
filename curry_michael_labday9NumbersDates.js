@@ -1,7 +1,6 @@
-//Problem 1
-
 var enterNum = "";
 var decimalPlace ="";
+
 
 var dPlaces = function(enterNum, decimalPlace){
     
@@ -19,70 +18,72 @@ var returnValue = dPlaces(enterNum,decimalPlace);
 console.log(returnValue);
 
 
-//Problem 2
 
 var myString = "";
 
+
 var strToNum = function(myString){
     
-    var isReal = isNaN(myString)
-    var newNumber = Number(myString)
     
+    var newNumber = parseFloat(myString)
     
-    if (myString >= 0 || myString <= 0) {
-        
-        console.log("You have enter a valid number and you new number is:" , newNumber , ".");
-    
-    }else{
-        
-        console.log("This is not a number");
-    
-    };
-    
+    return newNumber;
 };
 
-myString = prompt("What is your number?");
 
-console.log(myString);
+myString = prompt("Enter a number!");
+var returnString = strToNum(myString);
+console.log("Your old number:", myString, "Your new number", returnString, ".");
 
-strToNum(myString);
-
-//Problem 3
-
-var first = prompt("Whats the first date you want to compare?")
-var second = prompt("Whats the second date you want to compare?")
 
 var firstDate = new Date(first);
 var secondDate = new Date(second);
 var hoursDays = "";
+var returnedTime = "";
 
 var inBetween = function(firstDate, secondDate, hoursDays){
     
-    var theTime = firstDate - secondDate;
+    var theTime = Math.abs(secondDate - firstDate);
 
     
     if (hoursDays === "Days") {
         
         var actualTime =  Math.round ((((theTime /1000) /60) /60) /24);
         
-        console.log("There is:", actualTime , "days between" , firstDate,  "and" , secondDate, ".");
  
     }else if (hoursDays === "Hours"){
         
-        var actualTime2 = Math.round (((theTime /1000) /60) /60);
-        
-        console.log("There is:", actualTime2 , "hours between" , firstDate,  "and" , secondDate, ".");
-    
-    }else{
-        
-        console.log("Please enter Hours or Days as displayed")
+        var actualTime = Math.round (((theTime /1000) /60) /60);
+
     };
     
+    return actualTime;
     
 };
 
 
+var first = prompt("Enter a date you want to compare?")
+var second = prompt("Whats the second date you want to compare it to?")
 var hoursDays = prompt("Would you like your difference in Hours or Days","Hours or Days")
 
+var returnedTime = inBetween(firstDate, secondDate, hoursDays);
 
-inBetween(firstDate, secondDate, hoursDays);
+console.log("The difference is " , returnedTime , " ", hoursDays , ".")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
